@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "LegAngle",
-      "ioValue": 10
+      "ioValue": 20,
+      "currentEquation": "20"
     }
   ],
   "topLevel": true,
@@ -26,8 +27,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.29276773296244785,
-      "y": 0.5093167701863354,
+      "x": 0.2948539638386648,
+      "y": 0.5031055900621119,
       "uniqueID": "id-2423",
       "name": "4_way_dowel_joint",
       "ioValues": [
@@ -1927,14 +1928,14 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.3011126564673157,
-      "y": 0.8260869565217391,
+      "x": 0.30528511821974963,
+      "y": 0.84472049689441,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
         {
           "name": "LegAngle",
-          "ioValue": 10
+          "ioValue": 20
         }
       ],
       "topLevel": false,
@@ -1993,12 +1994,12 @@
             },
             {
               "name": "x-axis degrees",
-              "ioValue": 10,
+              "ioValue": 20,
               "currentEquation": "LegAngle"
             },
             {
               "name": "y-axis degrees",
-              "ioValue": 10,
+              "ioValue": 20,
               "currentEquation": "LegAngle"
             },
             {
@@ -2044,8 +2045,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.46244784422809454,
-      "y": 0.6459627329192547,
+      "x": 0.4798331015299026,
+      "y": 0.6739130434782609,
       "uniqueID": "id-2674",
       "ioValues": [
         {
@@ -2054,13 +2055,13 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": -5.8,
+          "currentEquation": "-5.8"
         },
         {
           "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 6,
+          "currentEquation": "6"
         },
         {
           "name": "zDist",
@@ -2081,6 +2082,10 @@
         },
         {
           "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
           "ioValue": null
         }
       ]
@@ -2173,6 +2178,16 @@
       "ap2Name": "LegAngle",
       "ap1ID": "id-2668",
       "ap2ID": "id-2651"
+    },
+    {
+      "ap2Name": "Angle",
+      "ap1ID": "id-2668",
+      "ap2ID": "id-2423"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-2674",
+      "ap2ID": "id-2680"
     },
     {
       "ap2Name": "number or geometry",
