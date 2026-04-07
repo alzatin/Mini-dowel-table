@@ -165,40 +165,9 @@
       "selectedColor": "Orange"
     },
     {
-      "atomType": "Tag",
-      "x": 0.5730180806675939,
-      "y": 0.3416149068322981,
-      "uniqueID": "id-3304",
-      "name": "top",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tags": [
-        "top"
-      ]
-    },
-    {
-      "atomType": "ExtractTag",
-      "x": 0.8025034770514604,
-      "y": 0.2236024844720497,
-      "uniqueID": "id-3307",
-      "name": "Extract Tag",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tag": "top",
-      "tagIndex": 0
-    },
-    {
       "atomType": "Molecule",
-      "x": 0.2524339360222531,
-      "y": 0.8385093167701863,
+      "x": 0.25034770514603616,
+      "y": 0.8540372670807453,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
@@ -1819,6 +1788,10 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 0.0393701
+                        },
+                        {
+                          "name": "inputShape",
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -1861,10 +1834,6 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 3
-                        },
-                        {
-                          "name": "inputShape",
-                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -2756,10 +2725,6 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 0.0393701
-                        },
-                        {
-                          "name": "inputShape",
-                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -2802,6 +2767,10 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 3
+                        },
+                        {
+                          "name": "inputShape",
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -3231,11 +3200,6 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-2680",
-      "ap2ID": "id-3307"
-    },
-    {
-      "ap2Name": "geometry",
       "ap1ID": "id-2685",
       "ap2ID": "id-2688"
     },
@@ -3247,17 +3211,12 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2692",
-      "ap2ID": "id-3304"
+      "ap2ID": "id-2698"
     },
     {
       "ap2Name": "Shape 7",
       "ap1ID": "id-2698",
       "ap2ID": "id-2680"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-3304",
-      "ap2ID": "id-2698"
     },
     {
       "ap2Name": "geometry",
