@@ -67,25 +67,22 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "zDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         }
       ]
     },
     {
       "atomType": "Assembly",
-      "x": 0.7294853963838664,
-      "y": 0.3944099378881988,
+      "x": 0.6703672075149445,
+      "y": 0.42546583850931674,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -150,8 +147,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": -2.75,
-          "currentEquation": "-2.75"
+          "ioValue": -2.75
         }
       ]
     },
@@ -167,6 +163,21 @@
         }
       ],
       "selectedColor": "Orange"
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.7694278394534586,
+      "y": 0.6801242236024845,
+      "uniqueID": "id-3059",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "Leg",
+      "tagIndex": 0
     },
     {
       "atomType": "Molecule",
@@ -1877,10 +1888,6 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 0.0393701
-                        },
-                        {
-                          "name": "inputShape",
-                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -1923,6 +1930,10 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 3
+                        },
+                        {
+                          "name": "inputShape",
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -2350,9 +2361,9 @@
     },
     {
       "atomType": "ExtractTag",
-      "x": 0.7705146036161336,
-      "y": 0.6832298136645962,
-      "uniqueID": "id-3059",
+      "x": 0.6678052946199828,
+      "y": 0.8354037267080745,
+      "uniqueID": "id-3361",
       "name": "Extract Tag",
       "ioValues": [
         {
@@ -2394,6 +2405,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2680",
       "ap2ID": "id-3059"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2680",
+      "ap2ID": "id-3361"
     },
     {
       "ap2Name": "geometry",
