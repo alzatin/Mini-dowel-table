@@ -57,8 +57,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.49095966620305986,
-      "y": 0.6459627329192547,
+      "x": 0.5368567454798331,
+      "y": 0.6801242236024845,
       "uniqueID": "id-2674",
       "ioValues": [
         {
@@ -84,8 +84,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7350486787204451,
-      "y": 0.41304347826086957,
+      "x": 0.7294853963838664,
+      "y": 0.3944099378881988,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -116,8 +116,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.38247566063977745,
-      "y": 0.15217391304347827,
+      "x": 0.3852573018080668,
+      "y": 0.14285714285714285,
       "uniqueID": "id-2688",
       "ioValues": [
         {
@@ -170,8 +170,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.25869262865090403,
-      "y": 0.813664596273292,
+      "x": 0.26147426981919336,
+      "y": 0.8198757763975155,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
@@ -209,8 +209,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.4827295703454086,
-          "y": 0.2950310559006211,
+          "x": 0.413769123783032,
+          "y": 0.28260869565217395,
           "uniqueID": "id-2658",
           "ioValues": [
             {
@@ -259,8 +259,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.6192080876158382,
-          "y": 0.5124223602484472,
+          "x": 0.5938803894297635,
+          "y": 0.4937888198757764,
           "uniqueID": "id-2968",
           "ioValues": [
             {
@@ -285,8 +285,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.6402695871946082,
-          "y": 0.35403726708074534,
+          "x": 0.6363004172461753,
+          "y": 0.34782608695652173,
           "uniqueID": "id-2974",
           "ioValues": [
             {
@@ -311,8 +311,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7801179443976411,
-          "y": 0.5093167701863354,
+          "x": 0.7378303198887344,
+          "y": 0.5031055900621119,
           "uniqueID": "id-2980",
           "ioValues": [
             {
@@ -371,6 +371,37 @@
             }
           ],
           "selectedColor": "Green"
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.43949930458970793,
+          "y": 0.6863354037267081,
+          "uniqueID": "id-3053",
+          "name": "Leg",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Leg"
+          ]
+        },
+        {
+          "atomType": "ExtractTag",
+          "x": 0.7885952712100139,
+          "y": 0.8229813664596274,
+          "uniqueID": "id-3056",
+          "name": "Extract Tag",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tag": "Leg",
+          "tagIndex": 0
         }
       ],
       "allConnectors": [
@@ -382,22 +413,7 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-2658",
-          "ap2ID": "id-2662"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2658",
-          "ap2ID": "id-2974"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2658",
-          "ap2ID": "id-2968"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2658",
-          "ap2ID": "id-2986"
+          "ap2ID": "id-3053"
         },
         {
           "ap2Name": "Shape 2",
@@ -420,6 +436,11 @@
           "ap2ID": "id-2995"
         },
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2980",
+          "ap2ID": "id-3056"
+        },
+        {
           "ap2Name": "Shape 4",
           "ap1ID": "id-2986",
           "ap2ID": "id-2980"
@@ -428,6 +449,26 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-2995",
           "ap2ID": "id-2653"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3053",
+          "ap2ID": "id-2986"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3053",
+          "ap2ID": "id-2968"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3053",
+          "ap2ID": "id-2974"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3053",
+          "ap2ID": "id-2662"
         }
       ],
       "fileTypeVersion": 1
@@ -435,7 +476,7 @@
     {
       "atomType": "GitHubMolecule",
       "x": 0.3796940194714882,
-      "y": 0.453416149068323,
+      "y": 0.42857142857142855,
       "uniqueID": "id-2423",
       "name": "4_way_dowel_joint",
       "ioValues": [
@@ -2306,6 +2347,21 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.7705146036161336,
+      "y": 0.6832298136645962,
+      "uniqueID": "id-3059",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "Leg",
+      "tagIndex": 0
     }
   ],
   "allConnectors": [
@@ -2333,6 +2389,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2680",
       "ap2ID": "id-2645"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2680",
+      "ap2ID": "id-3059"
     },
     {
       "ap2Name": "geometry",
