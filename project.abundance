@@ -68,8 +68,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5319888734353269,
-      "y": 0.7608695652173914,
+      "x": 0.53894297635605,
+      "y": 0.7670807453416149,
       "uniqueID": "id-2674",
       "ioValues": [
         {
@@ -92,8 +92,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7440890125173854,
-      "y": 0.5559006211180124,
+      "x": 0.7079276773296245,
+      "y": 0.5807453416149069,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -141,7 +141,7 @@
     },
     {
       "atomType": "Move",
-      "x": 0.46105702364394996,
+      "x": 0.4631432545201669,
       "y": 0.2236024844720497,
       "uniqueID": "id-2692",
       "ioValues": [
@@ -165,8 +165,8 @@
     },
     {
       "atomType": "Color",
-      "x": 0.6390820584144645,
-      "y": 0.3136645962732919,
+      "x": 0.5744089012517385,
+      "y": 0.2919254658385093,
       "uniqueID": "id-2698",
       "ioValues": [
         {
@@ -379,6 +379,38 @@
             }
           ],
           "selectedColor": "Green"
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.7746870653685675,
+          "y": 0.7608695652173914,
+          "uniqueID": "id-4135",
+          "name": "Legs",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Legs"
+          ]
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.43463143254520165,
+          "y": 0.7546583850931677,
+          "uniqueID": "id-4141",
+          "name": "Leg",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Leg"
+          ]
         }
       ],
       "allConnectors": [
@@ -405,7 +437,7 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-2658",
-          "ap2ID": "id-2986"
+          "ap2ID": "id-4141"
         },
         {
           "ap2Name": "Shape 2",
@@ -425,7 +457,7 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-2980",
-          "ap2ID": "id-2995"
+          "ap2ID": "id-4135"
         },
         {
           "ap2Name": "Shape 4",
@@ -436,6 +468,16 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-2995",
           "ap2ID": "id-2653"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4135",
+          "ap2ID": "id-2995"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4141",
+          "ap2ID": "id-2986"
         }
       ],
       "fileTypeVersion": 1
@@ -3196,6 +3238,117 @@
       "y": 0.3384615384615385,
       "uniqueID": "id-4113",
       "name": "DowelDiam"
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.6912378303198887,
+      "y": 0.2391304347826087,
+      "uniqueID": "id-4117",
+      "name": "TableTop",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "TableTop"
+      ]
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.8011126564673158,
+      "y": 0.391304347826087,
+      "uniqueID": "id-4120",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "TableTop",
+      "tagIndex": 0
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.8803894297635606,
+      "y": 0.2857142857142857,
+      "uniqueID": "id-4123",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 0.25
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Mini-dowel-table",
+          "currentEquation": "Mini-dowel-table"
+        }
+      ],
+      "partName": "Mini-dowel-table",
+      "sortDirection": "Left"
+    },
+    {
+      "atomType": "Export",
+      "x": 0.8184979137691238,
+      "y": 0.2173913043478261,
+      "uniqueID": "id-4130",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Mini-dowel-table",
+          "currentEquation": "Mini-dowel-table"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Mini-dowel-table"
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.7593880389429764,
+      "y": 0.7639751552795032,
+      "uniqueID": "id-4138",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "Leg",
+      "tagIndex": 0
     }
   ],
   "allConnectors": [
@@ -3226,6 +3379,16 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-2680",
+      "ap2ID": "id-4120"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2680",
+      "ap2ID": "id-4138"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-2685",
       "ap2ID": "id-2688"
     },
@@ -3240,9 +3403,9 @@
       "ap2ID": "id-2698"
     },
     {
-      "ap2Name": "Shape 7",
+      "ap2Name": "geometry",
       "ap1ID": "id-2698",
-      "ap2ID": "id-2680"
+      "ap2ID": "id-4117"
     },
     {
       "ap2Name": "geometry",
@@ -3253,6 +3416,21 @@
       "ap2Name": "Shape 8",
       "ap1ID": "id-3709",
       "ap2ID": "id-2680"
+    },
+    {
+      "ap2Name": "Shape 7",
+      "ap1ID": "id-4117",
+      "ap2ID": "id-2680"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4120",
+      "ap2ID": "id-4123"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4120",
+      "ap2ID": "id-4130"
     }
   ],
   "unitsKey": "Inches",
