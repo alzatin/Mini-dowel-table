@@ -7,7 +7,18 @@
   "ioValues": [
     {
       "name": "LegAngle",
-      "ioValue": 20
+      "ioValue": 20,
+      "currentEquation": "20"
+    },
+    {
+      "name": "TopDiameter",
+      "ioValue": 15,
+      "currentEquation": "15"
+    },
+    {
+      "name": "DowelDiam",
+      "ioValue": 1.1875,
+      "currentEquation": "3/16 + 1"
     }
   ],
   "topLevel": true,
@@ -101,13 +112,14 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.2169680111265647,
-      "y": 0.42546583850931674,
+      "x": 0.22322670375521558,
+      "y": 0.4347826086956522,
       "uniqueID": "id-2685",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 15
+          "ioValue": 15,
+          "currentEquation": "TopDiameter"
         }
       ]
     },
@@ -430,15 +442,15 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.37899860917941586,
-      "y": 0.5372670807453416,
+      "x": 0.3762169680111266,
+      "y": 0.5403726708074534,
       "uniqueID": "id-3709",
       "name": "4_way_dowel_joint",
       "ioValues": [
         {
           "name": "Dowel_diam",
           "ioValue": 1.1875,
-          "currentEquation": "3/16 + 1"
+          "currentEquation": "DowelDiam"
         },
         {
           "name": "LegAngle",
@@ -3170,6 +3182,20 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.24615384615384617,
+      "uniqueID": "id-4110",
+      "name": "TopDiameter"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.3384615384615385,
+      "uniqueID": "id-4113",
+      "name": "DowelDiam"
     }
   ],
   "allConnectors": [
