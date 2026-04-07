@@ -81,8 +81,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6703672075149445,
-      "y": 0.42546583850931674,
+      "x": 0.6668984700973575,
+      "y": 0.6335403726708074,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -153,8 +153,8 @@
     },
     {
       "atomType": "Color",
-      "x": 0.5812973883740523,
-      "y": 0.3167701863354037,
+      "x": 0.625173852573018,
+      "y": 0.3012422360248447,
       "uniqueID": "id-2698",
       "ioValues": [
         {
@@ -2302,6 +2302,41 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7294853963838664,
+      "y": 0.2701863354037267,
+      "uniqueID": "id-3663",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 0.25
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Mini-dowel-table",
+          "currentEquation": "Mini-dowel-table"
+        }
+      ],
+      "partName": "Mini-dowel-table",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -2349,6 +2384,11 @@
       "ap2Name": "Shape 6",
       "ap1ID": "id-2698",
       "ap2ID": "id-2680"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2698",
+      "ap2ID": "id-3663"
     },
     {
       "ap2Name": "geometry",
