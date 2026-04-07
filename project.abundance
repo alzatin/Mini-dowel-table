@@ -26,8 +26,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.7826453243470936,
-      "y": 0.7546583850931677,
+      "x": 0.8219749652294854,
+      "y": 0.39751552795031053,
       "uniqueID": "id-2645",
       "ioValues": [
         {
@@ -57,8 +57,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.548441449031171,
-      "y": 0.7142857142857143,
+      "x": 0.5521557719054242,
+      "y": 0.6273291925465838,
       "uniqueID": "id-2674",
       "ioValues": [
         {
@@ -84,8 +84,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7219882055602359,
-      "y": 0.4751552795031056,
+      "x": 0.719749652294854,
+      "y": 0.5031055900621119,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -170,8 +170,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2999157540016849,
-      "y": 0.8664596273291926,
+      "x": 0.25521557719054244,
+      "y": 0.7763975155279503,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
@@ -371,6 +371,22 @@
             }
           ],
           "selectedColor": "Green"
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.45688456189151594,
+          "y": 0.7080745341614907,
+          "uniqueID": "id-3011",
+          "name": "Leg",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Leg"
+          ]
         }
       ],
       "allConnectors": [
@@ -382,12 +398,12 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-2658",
-          "ap2ID": "id-2662"
+          "ap2ID": "id-3011"
         },
         {
           "ap2Name": "geometry",
           "ap1ID": "id-2658",
-          "ap2ID": "id-2968"
+          "ap2ID": "id-2662"
         },
         {
           "ap2Name": "geometry",
@@ -397,7 +413,7 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-2658",
-          "ap2ID": "id-2986"
+          "ap2ID": "id-2968"
         },
         {
           "ap2Name": "Shape 2",
@@ -428,6 +444,11 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-2995",
           "ap2ID": "id-2653"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3011",
+          "ap2ID": "id-2986"
         }
       ],
       "fileTypeVersion": 1
@@ -2306,6 +2327,220 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.6460361613351878,
+      "y": 0.7204968944099379,
+      "uniqueID": "id-2998",
+      "name": "Legs",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "Legs"
+      ]
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.758692628650904,
+      "y": 0.7857142857142857,
+      "uniqueID": "id-3001",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "Legs",
+      "tagIndex": 0
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.36300417246175243,
+      "y": 0.8913043478260869,
+      "uniqueID": "id-3014",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "Leg",
+      "tagIndex": 0
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.5528511821974965,
+      "y": 0.8291925465838509,
+      "uniqueID": "id-3025",
+      "name": "Get-Dimensions",
+      "ioValues": [
+        {
+          "name": "InputShape",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-3018",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-3019",
+          "name": "InputShape",
+          "type": "geometry"
+        },
+        {
+          "atomType": "Code",
+          "x": 0.3473333333333333,
+          "y": 0.2054380664652568,
+          "uniqueID": "id-3020",
+          "ioValues": [
+            {
+              "name": "shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "codeVersion": 1,
+          "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n];\n\n\nlet importedShape = library[shape];\nconsole.log(importedShape)\n\nfunction extractBox(boxObj) {\n  if (!boxObj) return null;\n  // If bounds is an array of two arrays\n  if (\n    Array.isArray(boxObj.bounds) &&\n    boxObj.bounds.length === 2 &&\n    Array.isArray(boxObj.bounds[0]) &&\n    Array.isArray(boxObj.bounds[1])\n  ) {\n    const [min, max] = boxObj.bounds;\n    // 2D: [minX, minY, minZ, maxX, maxY, maxZ]\n    return [min[0], min[1], 0, max[0], max[1], 0];\n  }\n  // If _wrapped has a bounds property\n  if (\n    boxObj._wrapped &&\n    Array.isArray(boxObj._wrapped.bounds) &&\n    boxObj._wrapped.bounds.length === 2 &&\n    Array.isArray(boxObj._wrapped.bounds[0]) &&\n    Array.isArray(boxObj._wrapped.bounds[1])\n  ) {\n    const [min, max] = boxObj._wrapped.bounds;\n    return [min[0], min[1], 0, max[0], max[1], 0];\n  }\n  return null;\n}\n\nfunction getBoundingBox(obj) {\n  const visited = new Set();\n\n  function mergeBoxes(a, b) {\n    if (!a) return b;\n    if (!b) return a;\n    return [\n      Math.min(a[0], b[0]),\n      Math.min(a[1], b[1]),\n      Math.min(a[2], b[2]),\n      Math.max(a[3], b[3]),\n      Math.max(a[4], b[4]),\n      Math.max(a[5], b[5]),\n    ];\n  }\n\n  function recurse(val) {\n    if (!val || typeof val !== \"object\") return null;\n    if (visited.has(val)) return null;\n    visited.add(val);\n\n    // Try to extract bounding box from _boundingBox or boundingBox\n    let box = extractBox(val._boundingBox) || extractBox(val.boundingBox);\n    // Only recurse into geometry arrays\n    if (Array.isArray(val.geometry)) {\n      box = val.geometry.reduce(\n        (acc, item) => mergeBoxes(acc, recurse(item)),\n        box\n      );\n    }\n    // If this is an array, recurse into each item\n    if (Array.isArray(val)) {\n      box = val.reduce((acc, item) => mergeBoxes(acc, recurse(item)), box);\n    }\n    return box;\n  }\n\n  return recurse(obj);\n}\n\nfunction getBoundingBoxSize(bbox) {\n  if (!Array.isArray(bbox) || bbox.length < 6) return null;\n  const width = bbox[3] - bbox[0];\n  const height = bbox[4] - bbox[1];\n  return { width, height };\n}\n\nconst boundingBox= getBoundingBox(importedShape)\nconsole.log(boundingBox)\nconst boundingBoxSize= getBoundingBoxSize(boundingBox)\nconsole.log(boundingBoxSize)\n\n//let assembly = await Assembly([importedShape, cylObj]);\nreturn boundingBoxSize.width.toString()\n"
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.15533333333333332,
+          "y": 0.6555891238670695,
+          "uniqueID": "id-3021",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 9
+            }
+          ]
+        },
+        {
+          "atomType": "Text",
+          "x": 0.5935960591133005,
+          "y": 0.23564954682779457,
+          "uniqueID": "id-3022",
+          "ioValues": [
+            {
+              "name": "Font Size",
+              "ioValue": 10
+            },
+            {
+              "name": "Text",
+              "ioValue": "9.000002",
+              "currentEquation": "Lorem Ipsum"
+            },
+            {
+              "name": "Font Family",
+              "ioValue": "ROBOTO",
+              "currentEquation": "ROBOTO"
+            }
+          ],
+          "fontFamily": "ANTON",
+          "selectedFontIndex": 0
+        },
+        {
+          "atomType": "Readme",
+          "x": 0.6744560838033844,
+          "y": 0.6948640483383687,
+          "uniqueID": "id-3023",
+          "name": "README",
+          "ioValues": [
+            {
+              "name": "value",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "readMeText": "",
+          "global": true
+        },
+        {
+          "atomType": "Code",
+          "x": 0.44641418211120065,
+          "y": 0.5045317220543807,
+          "uniqueID": "id-3024",
+          "ioValues": [
+            {
+              "name": "shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "codeVersion": 1,
+          "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n];\n\n\nlet importedShape = library[shape];\nconsole.log(importedShape)\n\nfunction extractBox(boxObj) {\n  if (!boxObj) return null;\n  // If bounds is an array of two arrays\n  if (\n    Array.isArray(boxObj.bounds) &&\n    boxObj.bounds.length === 2 &&\n    Array.isArray(boxObj.bounds[0]) &&\n    Array.isArray(boxObj.bounds[1])\n  ) {\n    const [min, max] = boxObj.bounds;\n    // 2D: [minX, minY, minZ, maxX, maxY, maxZ]\n    return [min[0], min[1], 0, max[0], max[1], 0];\n  }\n  // If _wrapped has a bounds property\n  if (\n    boxObj._wrapped &&\n    Array.isArray(boxObj._wrapped.bounds) &&\n    boxObj._wrapped.bounds.length === 2 &&\n    Array.isArray(boxObj._wrapped.bounds[0]) &&\n    Array.isArray(boxObj._wrapped.bounds[1])\n  ) {\n    const [min, max] = boxObj._wrapped.bounds;\n    return [min[0], min[1], 0, max[0], max[1], 0];\n  }\n  return null;\n}\n\nfunction getBoundingBox(obj) {\n  const visited = new Set();\n\n  function mergeBoxes(a, b) {\n    if (!a) return b;\n    if (!b) return a;\n    return [\n      Math.min(a[0], b[0]),\n      Math.min(a[1], b[1]),\n      Math.min(a[2], b[2]),\n      Math.max(a[3], b[3]),\n      Math.max(a[4], b[4]),\n      Math.max(a[5], b[5]),\n    ];\n  }\n\n  function recurse(val) {\n    if (!val || typeof val !== \"object\") return null;\n    if (visited.has(val)) return null;\n    visited.add(val);\n\n    // Try to extract bounding box from _boundingBox or boundingBox\n    let box = extractBox(val._boundingBox) || extractBox(val.boundingBox);\n    // Only recurse into geometry arrays\n    if (Array.isArray(val.geometry)) {\n      box = val.geometry.reduce(\n        (acc, item) => mergeBoxes(acc, recurse(item)),\n        box\n      );\n    }\n    // If this is an array, recurse into each item\n    if (Array.isArray(val)) {\n      box = val.reduce((acc, item) => mergeBoxes(acc, recurse(item)), box);\n    }\n    return box;\n  }\n\n  return recurse(obj);\n}\n\nfunction getBoundingBoxSize(bbox) {\n  if (!Array.isArray(bbox) || bbox.length < 6) return null;\n  const width = bbox[3] - bbox[0];\n  const height = bbox[4] - bbox[1];\n  return { width, height };\n}\n\nconst boundingBox= getBoundingBox(importedShape)\nconsole.log(boundingBox)\nconst boundingBoxSize= getBoundingBoxSize(boundingBox)\nconsole.log(boundingBoxSize)\n\nconst dimensions = `Width: ${boundingBoxSize.width}, Height: ${boundingBoxSize.height}`\n\n//let assembly = await Assembly([importedShape, cylObj]);\nreturn dimensions\n"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "shape",
+          "ap1ID": "id-3019",
+          "ap2ID": "id-3024"
+        },
+        {
+          "ap2Name": "Text",
+          "ap1ID": "id-3020",
+          "ap2ID": "id-3022"
+        },
+        {
+          "ap2Name": "shape",
+          "ap1ID": "id-3021",
+          "ap2ID": "id-3020"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-3024",
+          "ap2ID": "id-3018"
+        },
+        {
+          "ap2Name": "value",
+          "ap1ID": "id-3024",
+          "ap2ID": "id-3023"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-04-07T10:23:39.255Z",
+        "privateRepo": false,
+        "repoName": "Get-Dimensions",
+        "dateCreated": "2026-01-16T15:15:33Z",
+        "readMe": "https://raw.githubusercontent.com/alzatin/Get-Dimensions/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-1005",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/alzatin/Get-Dimensions",
+        "topics": [
+          "abundance-tool"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739632",
+        "ranking": 0,
+        "searchField": "get-dimensions alzatin draft abundance-tool",
+        "owner": "alzatin",
+        "description": "DRAFT",
+        "contentURL": "https://raw.githubusercontent.com/alzatin/Get-Dimensions/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/alzatin/Get-Dimensions/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -2325,14 +2560,19 @@
       "ap2ID": "id-2423"
     },
     {
-      "ap2Name": "Shape 3",
+      "ap2Name": "geometry",
       "ap1ID": "id-2674",
-      "ap2ID": "id-2680"
+      "ap2ID": "id-2998"
     },
     {
       "ap2Name": "geometry",
       "ap1ID": "id-2680",
       "ap2ID": "id-2645"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2680",
+      "ap2ID": "id-3001"
     },
     {
       "ap2Name": "geometry",
@@ -2360,9 +2600,24 @@
       "ap2ID": "id-2674"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2651",
+      "ap2ID": "id-3014"
+    },
+    {
       "ap2Name": "Shape 4",
       "ap1ID": "id-2423",
       "ap2ID": "id-2680"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-2998",
+      "ap2ID": "id-2680"
+    },
+    {
+      "ap2Name": "InputShape",
+      "ap1ID": "id-3014",
+      "ap2ID": "id-3025"
     }
   ],
   "unitsKey": "Inches",
