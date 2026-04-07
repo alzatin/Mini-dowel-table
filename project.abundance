@@ -165,24 +165,9 @@
       "selectedColor": "Orange"
     },
     {
-      "atomType": "ExtractTag",
-      "x": 0.7694278394534586,
-      "y": 0.6801242236024845,
-      "uniqueID": "id-3059",
-      "name": "Extract Tag",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tag": "Leg",
-      "tagIndex": 0
-    },
-    {
       "atomType": "Molecule",
-      "x": 0.26147426981919336,
-      "y": 0.8198757763975155,
+      "x": 0.2524339360222531,
+      "y": 0.8385093167701863,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
@@ -270,8 +255,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.5938803894297635,
-          "y": 0.4937888198757764,
+          "x": 0.5980528511821975,
+          "y": 0.531055900621118,
           "uniqueID": "id-2968",
           "ioValues": [
             {
@@ -382,37 +367,6 @@
             }
           ],
           "selectedColor": "Green"
-        },
-        {
-          "atomType": "Tag",
-          "x": 0.43949930458970793,
-          "y": 0.6863354037267081,
-          "uniqueID": "id-3053",
-          "name": "Leg",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "tags": [
-            "Leg"
-          ]
-        },
-        {
-          "atomType": "ExtractTag",
-          "x": 0.7885952712100139,
-          "y": 0.8229813664596274,
-          "uniqueID": "id-3056",
-          "name": "Extract Tag",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "tag": "Leg",
-          "tagIndex": 0
         }
       ],
       "allConnectors": [
@@ -424,7 +378,22 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-2658",
-          "ap2ID": "id-3053"
+          "ap2ID": "id-2662"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2658",
+          "ap2ID": "id-2974"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2658",
+          "ap2ID": "id-2968"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2658",
+          "ap2ID": "id-2986"
         },
         {
           "ap2Name": "Shape 2",
@@ -447,11 +416,6 @@
           "ap2ID": "id-2995"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2980",
-          "ap2ID": "id-3056"
-        },
-        {
           "ap2Name": "Shape 4",
           "ap1ID": "id-2986",
           "ap2ID": "id-2980"
@@ -460,26 +424,6 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-2995",
           "ap2ID": "id-2653"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-3053",
-          "ap2ID": "id-2986"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-3053",
-          "ap2ID": "id-2968"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-3053",
-          "ap2ID": "id-2974"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-3053",
-          "ap2ID": "id-2662"
         }
       ],
       "fileTypeVersion": 1
@@ -1888,6 +1832,10 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 0.0393701
+                        },
+                        {
+                          "name": "inputShape",
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -1930,10 +1878,6 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 3
-                        },
-                        {
-                          "name": "inputShape",
-                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -2358,21 +2302,6 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "ExtractTag",
-      "x": 0.6678052946199828,
-      "y": 0.8354037267080745,
-      "uniqueID": "id-3361",
-      "name": "Extract Tag",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tag": "Leg",
-      "tagIndex": 0
     }
   ],
   "allConnectors": [
@@ -2400,16 +2329,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2680",
       "ap2ID": "id-2645"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2680",
-      "ap2ID": "id-3059"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2680",
-      "ap2ID": "id-3361"
     },
     {
       "ap2Name": "geometry",
