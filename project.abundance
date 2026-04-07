@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "LegAngle",
-      "ioValue": 20,
-      "currentEquation": "20"
+      "ioValue": 20
     }
   ],
   "topLevel": true,
@@ -26,9 +25,417 @@
       ]
     },
     {
+      "atomType": "Rotate",
+      "x": 0.7826453243470936,
+      "y": 0.7546583850931677,
+      "uniqueID": "id-2645",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 180
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
+      "uniqueID": "id-2668",
+      "name": "LegAngle"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.548441449031171,
+      "y": 0.7142857142857143,
+      "uniqueID": "id-2674",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.7219882055602359,
+      "y": 0.4751552795031056,
+      "uniqueID": "id-2680",
+      "ioValues": [
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 4",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 5",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.2169680111265647,
+      "y": 0.42546583850931674,
+      "uniqueID": "id-2685",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 15
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.38247566063977745,
+      "y": 0.15217391304347827,
+      "uniqueID": "id-2688",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 0.75
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.45577085088458297,
+      "y": 0.27639751552795033,
+      "uniqueID": "id-2692",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": -2.75,
+          "currentEquation": "-2.75"
+        }
+      ]
+    },
+    {
+      "atomType": "Color",
+      "x": 0.5812973883740523,
+      "y": 0.3167701863354037,
+      "uniqueID": "id-2698",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Orange"
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2999157540016849,
+      "y": 0.8664596273291926,
+      "uniqueID": "id-2651",
+      "name": "Dowel_legs",
+      "ioValues": [
+        {
+          "name": "LegAngle",
+          "ioValue": 20
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-2653",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.25189553496208933,
+          "y": 0.5869565217391304,
+          "uniqueID": "id-2655",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 1.1875,
+              "currentEquation": "3/16 + 1"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.4827295703454086,
+          "y": 0.2950310559006211,
+          "uniqueID": "id-2658",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 15
+            }
+          ]
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.6588037068239259,
+          "y": 0.1863354037267081,
+          "uniqueID": "id-2662",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 20,
+              "currentEquation": "LegAngle"
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 20,
+              "currentEquation": "LegAngle"
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-2671",
+          "name": "LegAngle",
+          "type": "number"
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.6192080876158382,
+          "y": 0.5124223602484472,
+          "uniqueID": "id-2968",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": -20,
+              "currentEquation": "-LegAngle"
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": -20,
+              "currentEquation": "-LegAngle"
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.6402695871946082,
+          "y": 0.35403726708074534,
+          "uniqueID": "id-2974",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": -20,
+              "currentEquation": "-LegAngle"
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 20,
+              "currentEquation": "LegAngle"
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.7801179443976411,
+          "y": 0.5093167701863354,
+          "uniqueID": "id-2980",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 4",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.6048862679022746,
+          "y": 0.7981366459627329,
+          "uniqueID": "id-2986",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 20,
+              "currentEquation": "LegAngle"
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": -20,
+              "currentEquation": "-LegAngle"
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Color",
+          "x": 0.877843302443134,
+          "y": 0.6832298136645962,
+          "uniqueID": "id-2995",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "selectedColor": "Green"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2655",
+          "ap2ID": "id-2658"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2658",
+          "ap2ID": "id-2662"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2658",
+          "ap2ID": "id-2968"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2658",
+          "ap2ID": "id-2974"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2658",
+          "ap2ID": "id-2986"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-2662",
+          "ap2ID": "id-2980"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-2968",
+          "ap2ID": "id-2980"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-2974",
+          "ap2ID": "id-2980"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2980",
+          "ap2ID": "id-2995"
+        },
+        {
+          "ap2Name": "Shape 4",
+          "ap1ID": "id-2986",
+          "ap2ID": "id-2980"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-2995",
+          "ap2ID": "id-2653"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
       "atomType": "GitHubMolecule",
-      "x": 0.2948539638386648,
-      "y": 0.5031055900621119,
+      "x": 0.3934288121314237,
+      "y": 0.531055900621118,
       "uniqueID": "id-2423",
       "name": "4_way_dowel_joint",
       "ioValues": [
@@ -39,8 +446,7 @@
         },
         {
           "name": "Angle",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         }
       ],
       "topLevel": false,
@@ -1430,6 +1836,10 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 0.0393701
+                        },
+                        {
+                          "name": "inputShape",
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -1472,10 +1882,6 @@
                         {
                           "name": "scaleFactor",
                           "ioValue": 3
-                        },
-                        {
-                          "name": "inputShape",
-                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -1900,279 +2306,13 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Rotate",
-      "x": 0.5681502086230876,
-      "y": 0.4627329192546583,
-      "uniqueID": "id-2645",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "x-axis degrees",
-          "ioValue": 180,
-          "currentEquation": "180"
-        },
-        {
-          "name": "y-axis degrees",
-          "ioValue": 0
-        },
-        {
-          "name": "z-axis degrees",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.30528511821974963,
-      "y": 0.84472049689441,
-      "uniqueID": "id-2651",
-      "name": "Dowel_legs",
-      "ioValues": [
-        {
-          "name": "LegAngle",
-          "ioValue": 20
-        }
-      ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-2653",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Circle",
-          "x": 0.24965229485396384,
-          "y": 0.5838509316770186,
-          "uniqueID": "id-2655",
-          "ioValues": [
-            {
-              "name": "diameter",
-              "ioValue": 1.1875,
-              "currentEquation": "3/16 + 1"
-            }
-          ]
-        },
-        {
-          "atomType": "Extrude",
-          "x": 0.48748261474269816,
-          "y": 0.3136645962732919,
-          "uniqueID": "id-2658",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "height",
-              "ioValue": 15,
-              "currentEquation": "15"
-            }
-          ]
-        },
-        {
-          "atomType": "Rotate",
-          "x": 0.7169680111265646,
-          "y": 0.6335403726708074,
-          "uniqueID": "id-2662",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "x-axis degrees",
-              "ioValue": 20,
-              "currentEquation": "LegAngle"
-            },
-            {
-              "name": "y-axis degrees",
-              "ioValue": 20,
-              "currentEquation": "LegAngle"
-            },
-            {
-              "name": "z-axis degrees",
-              "ioValue": 0
-            }
-          ]
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
-          "uniqueID": "id-2671",
-          "name": "LegAngle",
-          "type": "number"
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2655",
-          "ap2ID": "id-2658"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2658",
-          "ap2ID": "id-2662"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-2662",
-          "ap2ID": "id-2653"
-        }
-      ],
-      "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.3167701863354037,
-      "uniqueID": "id-2668",
-      "name": "LegAngle"
-    },
-    {
-      "atomType": "Move",
-      "x": 0.4798331015299026,
-      "y": 0.6739130434782609,
-      "uniqueID": "id-2674",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": -5.8,
-          "currentEquation": "-5.8"
-        },
-        {
-          "name": "yDist",
-          "ioValue": 6,
-          "currentEquation": "6"
-        },
-        {
-          "name": "zDist",
-          "ioValue": -15,
-          "currentEquation": "-15"
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.7148817802503478,
-      "y": 0.3447204968944099,
-      "uniqueID": "id-2680",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 3",
-          "ioValue": null
-        }
-      ]
-    },
-    {
-      "atomType": "Circle",
-      "x": 0.2169680111265647,
-      "y": 0.42546583850931674,
-      "uniqueID": "id-2685",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 15,
-          "currentEquation": "15"
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.38247566063977745,
-      "y": 0.15217391304347827,
-      "uniqueID": "id-2688",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 0.75,
-          "currentEquation": ".75"
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.4596662030598053,
-      "y": 0.3136645962732919,
-      "uniqueID": "id-2692",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 2
-        }
-      ]
-    },
-    {
-      "atomType": "Color",
-      "x": 0.5897079276773296,
-      "y": 0.3105590062111801,
-      "uniqueID": "id-2698",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "selectedColor": "Orange"
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2423",
-      "ap2ID": "id-2645"
-    },
-    {
-      "ap2Name": "Shape 2",
+      "ap2Name": "number or geometry",
       "ap1ID": "id-2645",
-      "ap2ID": "id-2680"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2651",
-      "ap2ID": "id-2674"
+      "ap2ID": "id-2352"
     },
     {
       "ap2Name": "LegAngle",
@@ -2190,9 +2330,9 @@
       "ap2ID": "id-2680"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "geometry",
       "ap1ID": "id-2680",
-      "ap2ID": "id-2352"
+      "ap2ID": "id-2645"
     },
     {
       "ap2Name": "geometry",
@@ -2210,8 +2350,18 @@
       "ap2ID": "id-2698"
     },
     {
-      "ap2Name": "Shape 1",
+      "ap2Name": "Shape 5",
       "ap1ID": "id-2698",
+      "ap2ID": "id-2680"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2651",
+      "ap2ID": "id-2674"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-2423",
       "ap2ID": "id-2680"
     }
   ],
