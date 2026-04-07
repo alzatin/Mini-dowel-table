@@ -81,8 +81,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6703755215577191,
-      "y": 0.7546583850931677,
+      "x": 0.7475660639777468,
+      "y": 0.6055900621118013,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -153,8 +153,8 @@
     },
     {
       "atomType": "Color",
-      "x": 0.7162726008344924,
-      "y": 0.45962732919254656,
+      "x": 0.6369958275382476,
+      "y": 0.32608695652173914,
       "uniqueID": "id-2698",
       "ioValues": [
         {
@@ -2302,83 +2302,6 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Gcode",
-      "x": 0.8581363004172461,
-      "y": 0.16770186335403728,
-      "uniqueID": "id-3663",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Tool Size",
-          "ioValue": 0.25
-        },
-        {
-          "name": "Passes",
-          "ioValue": 1
-        },
-        {
-          "name": "Speed",
-          "ioValue": 1500
-        },
-        {
-          "name": "Cut Through",
-          "ioValue": 0
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "Mini-dowel-table",
-          "currentEquation": "Mini-dowel-table"
-        }
-      ],
-      "partName": "Mini-dowel-table",
-      "sortDirection": "Left"
-    },
-    {
-      "atomType": "Move",
-      "x": 0.519471488178025,
-      "y": 0.4347826086956522,
-      "uniqueID": "id-3670",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 5,
-          "currentEquation": "5"
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0.3,
-          "currentEquation": ".3"
-        }
-      ]
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.6300417246175244,
-      "y": 0.18944099378881987,
-      "uniqueID": "id-3676",
-      "ioValues": [
-        {
-          "name": "geometry1",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "geometry2",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -2423,16 +2346,6 @@
       "ap2ID": "id-2698"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2692",
-      "ap2ID": "id-3670"
-    },
-    {
-      "ap2Name": "geometry1",
-      "ap1ID": "id-2692",
-      "ap2ID": "id-3676"
-    },
-    {
       "ap2Name": "Shape 6",
       "ap1ID": "id-2698",
       "ap2ID": "id-2680"
@@ -2446,16 +2359,6 @@
       "ap2Name": "Shape 5",
       "ap1ID": "id-2423",
       "ap2ID": "id-2680"
-    },
-    {
-      "ap2Name": "geometry2",
-      "ap1ID": "id-3670",
-      "ap2ID": "id-3676"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-3676",
-      "ap2ID": "id-3663"
     }
   ],
   "unitsKey": "Inches",
