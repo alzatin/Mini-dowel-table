@@ -184,7 +184,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.3384615384615385,
+      "y": 0.3492537313432836,
       "uniqueID": "id-4113",
       "name": "DowelDiam"
     },
@@ -325,14 +325,18 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.25034770514603616,
-      "y": 0.8540372670807453,
+      "x": 0.24299719887955182,
+      "y": 0.626865671641791,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
         {
           "name": "LegAngle",
           "ioValue": 20
+        },
+        {
+          "name": "DowelDiam",
+          "ioValue": 1.1875
         }
       ],
       "topLevel": false,
@@ -351,8 +355,8 @@
         },
         {
           "atomType": "Circle",
-          "x": 0.25189553496208933,
-          "y": 0.5869565217391304,
+          "x": 0.14775910364145659,
+          "y": 0.4388059701492537,
           "uniqueID": "id-2655",
           "ioValues": [
             {
@@ -364,8 +368,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.413769123783032,
-          "y": 0.28260869565217395,
+          "x": 0.3438375350140056,
+          "y": 0.3134328358208955,
           "uniqueID": "id-2658",
           "ioValues": [
             {
@@ -490,8 +494,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.6048862679022746,
-          "y": 0.7981366459627329,
+          "x": 0.6071428571428572,
+          "y": 0.7940298507462686,
           "uniqueID": "id-2986",
           "ioValues": [
             {
@@ -558,6 +562,285 @@
           "tags": [
             "Leg"
           ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.20938375350140054,
+          "y": 0.7014925373134329,
+          "uniqueID": "id-5710",
+          "name": "Dowel_Cap",
+          "ioValues": [
+            {
+              "name": "DowelDiam",
+              "ioValue": 1.1875
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-5712",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.2724089635854342,
+              "y": 0.45970149253731346,
+              "uniqueID": "id-5719",
+              "name": "Sphere",
+              "ioValues": [
+                {
+                  "name": "Radius",
+                  "ioValue": 0.59375,
+                  "currentEquation": "DowelDiam/2"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-5715",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.45804540967423496,
+                  "y": 0.5090909090909091,
+                  "uniqueID": "id-5716",
+                  "ioValues": [
+                    {
+                      "name": "radius",
+                      "ioValue": 0.59375
+                    }
+                  ],
+                  "codeVersion": 1,
+                  "code": "//Inputs:[radius];\n\n//let shape = replicad.makeSphere(radius)\n\nconst newPlane = new replicad.Plane().pivot(0, 'Y');\n\n return { geometry: [replicad.makeSphere(radius)], tags: [],\n      color: '#A3CE5B',\n      bom:[],\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.025384615384615384,
+                  "y": 0.15384615384615385,
+                  "uniqueID": "id-5717",
+                  "name": "Radius",
+                  "type": "number"
+                },
+                {
+                  "atomType": "Constant",
+                  "x": 0.24709302325581398,
+                  "y": 0.8575851393188855,
+                  "uniqueID": "id-5718",
+                  "value": 10
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-5716",
+                  "ap2ID": "id-5715"
+                },
+                {
+                  "ap2Name": "radius",
+                  "ap1ID": "id-5717",
+                  "ap2ID": "id-5716"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-04-08T18:23:39.284Z",
+                "repoName": "Sphere",
+                "dateCreated": "2024-11-13T19:37:04Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/alzatin/Sphere/master/README.md?sanitize=true",
+                "yyyy": 2025,
+                "topMoleculeID": 1731526624936,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/BarbourSmith/Sphere",
+                "topics": [],
+                "parentRepo": "BarbourSmith/Sphere",
+                "forks": 1,
+                "dateModified": "03/05/2025",
+                "ranking": 1.4,
+                "searchField": "sphere alzatin",
+                "owner": "alzatin",
+                "description": "Creates a sphere from the input radius",
+                "contentURL": "https://raw.githubusercontent.com/alzatin/Sphere/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/alzatin/Sphere/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "Inches",
+              "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-5732",
+              "name": "DowelDiam",
+              "type": "number"
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.27801120448179273,
+              "y": 0.7343283582089553,
+              "uniqueID": "id-5735",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 1.1875,
+                  "currentEquation": "DowelDiam"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.4222689075630252,
+              "y": 0.7104477611940297,
+              "uniqueID": "id-5738",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 0.75,
+                  "currentEquation": ".75"
+                }
+              ]
+            },
+            {
+              "atomType": "Fusion",
+              "x": 0.6022408963585434,
+              "y": 0.5432835820895523,
+              "uniqueID": "id-5742",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": {
+                    "geometry": "extrude-circle-0.59375-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75",
+                    "dimension": "3D",
+                    "tags": [],
+                    "plane": {
+                      "origin": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "xDir": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "normal": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "color": "#aad7f2",
+                    "bom": []
+                  }
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": {
+                    "geometry": "move-1b7813a2-0.59375-0-0-0-0.75",
+                    "tags": [],
+                    "color": "#A3CE5B",
+                    "bom": [],
+                    "plane": {
+                      "origin": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "xDir": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "normal": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "dimension": "3D"
+                  }
+                }
+              ],
+              "unionType": "Fusion"
+            },
+            {
+              "atomType": "Move",
+              "x": 0.48599439775910364,
+              "y": 0.3552238805970149,
+              "uniqueID": "id-5747",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0.75,
+                  "currentEquation": ".75"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-5719",
+              "ap2ID": "id-5747"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-5735",
+              "ap2ID": "id-5738"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-5738",
+              "ap2ID": "id-5742"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-5747",
+              "ap2ID": "id-5742"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-5729",
+          "name": "DowelDiam",
+          "type": "number"
         }
       ],
       "allConnectors": [
@@ -625,6 +908,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-4141",
           "ap2ID": "id-2986"
+        },
+        {
+          "ap2Name": "DowelDiam",
+          "ap1ID": "id-5729",
+          "ap2ID": "id-5710"
         }
       ],
       "fileTypeVersion": 1
@@ -799,8 +1087,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3060224089635854,
-      "y": 0.5373134328358209,
+      "x": 0.3529411764705882,
+      "y": 0.42388059701492536,
       "uniqueID": "id-4967",
       "name": "4_way_dowel_joint",
       "ioValues": [
@@ -3007,6 +3295,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2698",
       "ap2ID": "id-4117"
+    },
+    {
+      "ap2Name": "DowelDiam",
+      "ap1ID": "id-4113",
+      "ap2ID": "id-2651"
     },
     {
       "ap2Name": "Shape 7",
