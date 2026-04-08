@@ -35,8 +35,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.7976088812980359,
-      "y": 0.5683229813664596,
+      "x": 0.7990264255910987,
+      "y": 0.5714285714285714,
       "uniqueID": "id-2645",
       "ioValues": [
         {
@@ -66,8 +66,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.53894297635605,
-      "y": 0.7670807453416149,
+      "x": 0.3949930458970793,
+      "y": 0.7577639751552795,
       "uniqueID": "id-2674",
       "ioValues": [
         {
@@ -90,8 +90,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.66865926558497,
-      "y": 0.5279503105590062,
+      "x": 0.5250347705146036,
+      "y": 0.46583850931677023,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -110,8 +110,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.15546218487394958,
-      "y": 0.5313432835820895,
+      "x": 0.2314261315115286,
+      "y": 0.453416149068323,
       "uniqueID": "id-2685",
       "ioValues": [
         {
@@ -256,8 +256,8 @@
     },
     {
       "atomType": "Export",
-      "x": 0.8146883005977797,
-      "y": 0.2204968944099379,
+      "x": 0.8233657858136301,
+      "y": 0.18944099378881987,
       "uniqueID": "id-4130",
       "ioValues": [
         {
@@ -286,8 +286,8 @@
     },
     {
       "atomType": "ExtractTag",
-      "x": 0.6780529461998291,
-      "y": 0.8354037267080745,
+      "x": 0.5076495132127955,
+      "y": 0.7236024844720497,
       "uniqueID": "id-4138",
       "name": "Extract Tag",
       "ioValues": [
@@ -301,8 +301,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.7830913748932536,
-      "y": 0.8944099378881988,
+      "x": 0.7795549374130738,
+      "y": 0.9006211180124224,
       "uniqueID": "id-5324",
       "ioValues": [
         {
@@ -325,8 +325,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.25034770514603616,
-      "y": 0.8540372670807453,
+      "x": 0.2482614742698192,
+      "y": 0.8478260869565217,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
@@ -799,8 +799,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3060224089635854,
-      "y": 0.5373134328358209,
+      "x": 0.34770514603616137,
+      "y": 0.4751552795031056,
       "uniqueID": "id-4967",
       "name": "4_way_dowel_joint",
       "ioValues": [
@@ -2945,6 +2945,145 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.11891515994436719,
+      "y": 0.7763975155279503,
+      "uniqueID": "id-5710",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-5712",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.22600834492350488,
+          "y": 0.5838509316770186,
+          "uniqueID": "id-5714",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.34909596662030595,
+          "y": 0.5496894409937888,
+          "uniqueID": "id-5717",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Label",
+          "x": 0.4422809457579972,
+          "y": 0.6335403726708074,
+          "uniqueID": "id-5721",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "text",
+              "ioValue": "label",
+              "currentEquation": "label"
+            },
+            {
+              "name": "startPosition",
+              "ioValue": [
+                0,
+                10,
+                0
+              ]
+            },
+            {
+              "name": "endPosition",
+              "ioValue": [
+                10,
+                10,
+                0
+              ]
+            },
+            {
+              "name": "color",
+              "ioValue": "#dd863b",
+              "currentEquation": "#dd863b"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5714",
+          "ap2ID": "id-5717"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5717",
+          "ap2ID": "id-5721"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Label",
+      "x": 0.6216968011126565,
+      "y": 0.7515527950310559,
+      "uniqueID": "id-5728",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "text",
+          "ioValue": "label",
+          "currentEquation": "label"
+        },
+        {
+          "name": "startPosition",
+          "ioValue": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "endPosition",
+          "ioValue": [
+            10,
+            10,
+            0
+          ]
+        },
+        {
+          "name": "color",
+          "ioValue": "#7257bc",
+          "currentEquation": "#7257bc"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -3022,6 +3161,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-4120",
       "ap2ID": "id-4130"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4138",
+      "ap2ID": "id-5728"
     },
     {
       "ap2Name": "InputShape",
