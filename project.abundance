@@ -368,8 +368,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.3438375350140056,
-          "y": 0.3134328358208955,
+          "x": 0.2619047619047619,
+          "y": 0.3283582089552239,
           "uniqueID": "id-2658",
           "ioValues": [
             {
@@ -470,8 +470,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7378303198887344,
-          "y": 0.5031055900621119,
+          "x": 0.7450980392156863,
+          "y": 0.49552238805970156,
           "uniqueID": "id-2980",
           "ioValues": [
             {
@@ -533,8 +533,8 @@
         },
         {
           "atomType": "Tag",
-          "x": 0.7746870653685675,
-          "y": 0.7608695652173914,
+          "x": 0.7668067226890757,
+          "y": 0.764179104477612,
           "uniqueID": "id-4135",
           "name": "Legs",
           "ioValues": [
@@ -549,8 +549,8 @@
         },
         {
           "atomType": "Tag",
-          "x": 0.43463143254520165,
-          "y": 0.7546583850931677,
+          "x": 0.4985994397759103,
+          "y": 0.5940298507462687,
           "uniqueID": "id-4141",
           "name": "Leg",
           "ioValues": [
@@ -565,8 +565,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.20938375350140054,
-          "y": 0.7014925373134329,
+          "x": 0.21148459383753504,
+          "y": 0.6716417910447761,
           "uniqueID": "id-5710",
           "name": "Dowel_Cap",
           "ioValues": [
@@ -706,8 +706,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.4222689075630252,
-              "y": 0.7104477611940297,
+              "x": 0.41526610644257705,
+              "y": 0.47164179104477605,
               "uniqueID": "id-5738",
               "ioValues": [
                 {
@@ -723,8 +723,8 @@
             },
             {
               "atomType": "Fusion",
-              "x": 0.6022408963585434,
-              "y": 0.5432835820895523,
+              "x": 0.7689075630252101,
+              "y": 0.49253731343283585,
               "uniqueID": "id-5742",
               "ioValues": [
                 {
@@ -780,6 +780,60 @@
                     },
                     "dimension": "3D"
                   }
+                },
+                {
+                  "name": "Shape 3",
+                  "ioValue": {
+                    "geometry": "extrude-circle-0.25-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--0.5",
+                    "dimension": "3D",
+                    "tags": [],
+                    "plane": {
+                      "origin": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "xDir": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "normal": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "color": "#aad7f2",
+                    "bom": []
+                  }
+                },
+                {
+                  "name": "Shape 4",
+                  "ioValue": {
+                    "geometry": "extrude-circle-0.025-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--0.53",
+                    "dimension": "3D",
+                    "tags": [],
+                    "plane": {
+                      "origin": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "xDir": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "normal": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "color": "#aad7f2",
+                    "bom": []
+                  }
                 }
               ],
               "unionType": "Fusion"
@@ -808,6 +862,66 @@
                   "currentEquation": ".75"
                 }
               ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.43067226890756305,
+              "y": 0.7373134328358208,
+              "uniqueID": "id-5753",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 0.5,
+                  "currentEquation": ".5"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.5644257703081232,
+              "y": 0.6507462686567164,
+              "uniqueID": "id-5756",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": -0.5,
+                  "currentEquation": "-.5"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.4817927170868347,
+              "y": 0.9373134328358208,
+              "uniqueID": "id-5761",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 0.05,
+                  "currentEquation": ".05"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.5749299719887956,
+              "y": 0.8716417910447761,
+              "uniqueID": "id-5764",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": -0.53,
+                  "currentEquation": "-.53"
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -827,8 +941,33 @@
               "ap2ID": "id-5742"
             },
             {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-5742",
+              "ap2ID": "id-5712"
+            },
+            {
               "ap2Name": "Shape 2",
               "ap1ID": "id-5747",
+              "ap2ID": "id-5742"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-5753",
+              "ap2ID": "id-5756"
+            },
+            {
+              "ap2Name": "Shape 3",
+              "ap1ID": "id-5756",
+              "ap2ID": "id-5742"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-5761",
+              "ap2ID": "id-5764"
+            },
+            {
+              "ap2Name": "Shape 4",
+              "ap1ID": "id-5764",
               "ap2ID": "id-5742"
             }
           ],
@@ -841,6 +980,93 @@
           "uniqueID": "id-5729",
           "name": "DowelDiam",
           "type": "number"
+        },
+        {
+          "atomType": "Move",
+          "x": 0.27801120448179273,
+          "y": 0.8746268656716418,
+          "uniqueID": "id-5769",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 20,
+              "currentEquation": "20"
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.37184873949579833,
+          "y": 0.48656716417910445,
+          "uniqueID": "id-5775",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.35224089635854344,
+          "y": 0.7761194029850745,
+          "uniqueID": "id-5780",
+          "name": "dowelcap",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "dowelcap"
+          ]
+        },
+        {
+          "atomType": "Export",
+          "x": 0.46218487394957986,
+          "y": 0.835820895522388,
+          "uniqueID": "id-5786",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STL",
+              "currentEquation": "STL"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Dowel_legs",
+              "currentEquation": "Dowel_legs"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "Dowel_legs"
         }
       ],
       "allConnectors": [
@@ -850,24 +1076,9 @@
           "ap2ID": "id-2658"
         },
         {
-          "ap2Name": "geometry",
+          "ap2Name": "Shape 1",
           "ap1ID": "id-2658",
-          "ap2ID": "id-2662"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2658",
-          "ap2ID": "id-2974"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2658",
-          "ap2ID": "id-2968"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-2658",
-          "ap2ID": "id-4141"
+          "ap2ID": "id-5775"
         },
         {
           "ap2Name": "Shape 2",
@@ -910,9 +1121,49 @@
           "ap2ID": "id-2986"
         },
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5710",
+          "ap2ID": "id-5769"
+        },
+        {
           "ap2Name": "DowelDiam",
           "ap1ID": "id-5729",
           "ap2ID": "id-5710"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5769",
+          "ap2ID": "id-5780"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5775",
+          "ap2ID": "id-2662"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5775",
+          "ap2ID": "id-2974"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5775",
+          "ap2ID": "id-2968"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5775",
+          "ap2ID": "id-4141"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-5780",
+          "ap2ID": "id-5775"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5780",
+          "ap2ID": "id-5786"
         }
       ],
       "fileTypeVersion": 1
