@@ -839,8 +839,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.23634881825590873,
-      "y": 0.801829268292683,
+      "x": 0.23716381418092908,
+      "y": 0.8170731707317074,
       "uniqueID": "id-2651",
       "name": "Dowel_legs",
       "ioValues": [
@@ -1144,7 +1144,7 @@
         {
           "atomType": "Export",
           "x": 0.46047269763651183,
-          "y": 0.850609756097561,
+          "y": 0.8475609756097561,
           "uniqueID": "id-5786",
           "ioValues": [
             {
@@ -1162,14 +1162,14 @@
             },
             {
               "name": "Part Name",
-              "ioValue": "Dowel_legs",
-              "currentEquation": "Dowel_legs"
+              "ioValue": "Dowel_cap",
+              "currentEquation": "Dowel_cap"
             }
           ],
           "type": null,
           "resolution": 96,
           "importIndex": 0,
-          "partName": "Dowel_legs"
+          "partName": "Dowel_cap"
         },
         {
           "atomType": "GitHubMolecule",
@@ -1602,8 +1602,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 0.5,
-                  "currentEquation": ".5"
+                  "ioValue": 0.5
                 }
               ]
             },
@@ -1632,6 +1631,22 @@
                 {
                   "name": "height",
                   "ioValue": -0.53
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.8149959250203749,
+              "y": 0.676829268292683,
+              "uniqueID": "id-7752",
+              "ioValues": [
+                {
+                  "name": "geometry1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "geometry2",
+                  "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
             },
@@ -1728,22 +1743,6 @@
               },
               "unitsKey": "Inches",
               "fileTypeVersion": 1
-            },
-            {
-              "atomType": "Difference",
-              "x": 0.8149959250203749,
-              "y": 0.676829268292683,
-              "uniqueID": "id-7752",
-              "ioValues": [
-                {
-                  "name": "geometry1",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "geometry2",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
             }
           ],
           "allConnectors": [
@@ -1783,14 +1782,14 @@
               "ap2ID": "id-5764"
             },
             {
-              "ap2Name": "geometry",
-              "ap1ID": "id-5719",
-              "ap2ID": "id-5747"
-            },
-            {
               "ap2Name": "number or geometry",
               "ap1ID": "id-7752",
               "ap2ID": "id-5712"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-5719",
+              "ap2ID": "id-5747"
             }
           ],
           "fileTypeVersion": 1
