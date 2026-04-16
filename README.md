@@ -6,5 +6,7 @@
 
 
 
- 
+ Print 4 dowel caps, 1 4 way dowel joint, cut 1 table top, get 4 dowels of your desired diameter and length
+
+
 

@@ -2,5 +2,6 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|Wood dowel|4|$0.00||
 |#6 Screw|4|$0.00||
-|Total: |4|$0.00| |
+|Total: |8|$0.00| |
