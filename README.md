@@ -4,14 +4,6 @@
 
 ![](/project.svg)
 
-
-
- Print 4 dowel caps, 1 4 way dowel joint, cut 1 table top, get 4 dowels of your desired diameter and length
-
-**Value:** __GEOMETRY_INPUT__
-
-
-
 ## Inputs
 
 - **LegAngle** (number)
@@ -20,5 +12,13 @@
 - **Leg_length** (number)
 - **Top_width** (number)
 - **Top_Thickness** (number)
+
+
+
+
+ Print 4 dowel caps, 1 4 way dowel joint, cut 1 table top, get 4 dowels of your desired diameter and length
+
+**Value:** __GEOMETRY_INPUT__
+
 
 
