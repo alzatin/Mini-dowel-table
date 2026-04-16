@@ -20,18 +20,15 @@
     },
     {
       "name": "Leg_length",
-      "ioValue": 18,
-      "currentEquation": "18"
+      "ioValue": 18
     },
     {
       "name": "Top_width",
-      "ioValue": 18,
-      "currentEquation": "18"
+      "ioValue": 18
     },
     {
       "name": "Top_Thickness",
-      "ioValue": 1,
-      "currentEquation": "1"
+      "ioValue": 1
     }
   ],
   "topLevel": true,
@@ -155,7 +152,7 @@
     },
     {
       "atomType": "Move",
-      "x": 0.503382949932341,
+      "x": 0.4050529747351263,
       "y": 0.18292682926829268,
       "uniqueID": "id-2692",
       "ioValues": [
@@ -173,8 +170,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": -2.75,
-          "currentEquation": "-2.75"
+          "ioValue": -2.75
         }
       ]
     },
@@ -207,8 +203,8 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.6912378303198887,
-      "y": 0.2391304347826087,
+      "x": 0.6487367563162184,
+      "y": 0.18902439024390244,
       "uniqueID": "id-4117",
       "name": "TableTop",
       "ioValues": [
@@ -273,8 +269,8 @@
     },
     {
       "atomType": "Export",
-      "x": 0.810554803788904,
-      "y": 0.13414634146341464,
+      "x": 0.7995110024449877,
+      "y": 0.1524390243902439,
       "uniqueID": "id-4130",
       "ioValues": [
         {
@@ -327,8 +323,8 @@
     },
     {
       "atomType": "Label",
-      "x": 0.42216788916055425,
-      "y": 0.29878048780487804,
+      "x": 0.4857375713121434,
+      "y": 0.3628048780487805,
       "uniqueID": "id-7230",
       "ioValues": [
         {
@@ -400,6 +396,42 @@
           "currentEquation": "#dd863b"
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4307692307692308,
+      "uniqueID": "id-8267",
+      "name": "Leg_length"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.5230769230769231,
+      "uniqueID": "id-8270",
+      "name": "Top_width"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.6153846153846154,
+      "uniqueID": "id-8273",
+      "name": "Top_Thickness"
+    },
+    {
+      "atomType": "Readme",
+      "x": 0.18267929634641408,
+      "y": 0.23475609756097562,
+      "uniqueID": "id-8289",
+      "name": "README",
+      "ioValues": [
+        {
+          "name": "value",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "readMeText": "Print 4 dowel caps, 1 4 way dowel joint, cut 1 table top, get 4 dowels of your desired diameter and length",
+      "global": true
     },
     {
       "atomType": "GitHubMolecule",
@@ -908,6 +940,50 @@
           "partName": "Dowel_cap"
         },
         {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-8279",
+          "name": "Leg_length",
+          "type": "number"
+        },
+        {
+          "atomType": "Add-BOM-Tag",
+          "x": 0.4167794316644114,
+          "y": 0.22865853658536586,
+          "uniqueID": "id-8282",
+          "name": "Add BOM Tag",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Item Name",
+              "ioValue": "Wood dowel",
+              "currentEquation": "Wood dowel"
+            },
+            {
+              "name": "Number Needed",
+              "ioValue": 1
+            },
+            {
+              "name": "Cost (USD)",
+              "ioValue": 0
+            },
+            {
+              "name": "Source Link",
+              "ioValue": ""
+            }
+          ],
+          "BOMitem": {
+            "BOMitemName": "Wood dowel",
+            "numberNeeded": 1,
+            "costUSD": 0,
+            "source": ""
+          }
+        },
+        {
           "atomType": "GitHubMolecule",
           "x": 0.8370008149959249,
           "y": 0.2713414634146341,
@@ -1387,6 +1463,19 @@
               ]
             },
             {
+              "atomType": "Color",
+              "x": 0.8958051420838972,
+              "y": 0.8079268292682927,
+              "uniqueID": "id-8276",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "selectedColor": "Orange"
+            },
+            {
               "atomType": "GitHubMolecule",
               "x": 0.2762836185819071,
               "y": 0.4603658536585366,
@@ -1479,19 +1568,6 @@
               },
               "unitsKey": "Inches",
               "fileTypeVersion": 1
-            },
-            {
-              "atomType": "Color",
-              "x": 0.8958051420838972,
-              "y": 0.8079268292682927,
-              "uniqueID": "id-8276",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "selectedColor": "Orange"
             }
           ],
           "allConnectors": [
@@ -1536,61 +1612,17 @@
               "ap2ID": "id-8276"
             },
             {
-              "ap2Name": "geometry",
-              "ap1ID": "id-5719",
-              "ap2ID": "id-5747"
-            },
-            {
               "ap2Name": "number or geometry",
               "ap1ID": "id-8276",
               "ap2ID": "id-5712"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-5719",
+              "ap2ID": "id-5747"
             }
           ],
           "fileTypeVersion": 1
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.5823170731707317,
-          "uniqueID": "id-8279",
-          "name": "Leg_length",
-          "type": "number"
-        },
-        {
-          "atomType": "Add-BOM-Tag",
-          "x": 0.4167794316644114,
-          "y": 0.22865853658536586,
-          "uniqueID": "id-8282",
-          "name": "Add BOM Tag",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "Item Name",
-              "ioValue": "Wood dowel",
-              "currentEquation": "Wood dowel"
-            },
-            {
-              "name": "Number Needed",
-              "ioValue": 1
-            },
-            {
-              "name": "Cost (USD)",
-              "ioValue": 0
-            },
-            {
-              "name": "Source Link",
-              "ioValue": ""
-            }
-          ],
-          "BOMitem": {
-            "BOMitemName": "Wood dowel",
-            "numberNeeded": 1,
-            "costUSD": 0,
-            "source": ""
-          }
         }
       ],
       "allConnectors": [
@@ -1690,11 +1722,6 @@
           "ap2ID": "id-5786"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-5710",
-          "ap2ID": "id-5769"
-        },
-        {
           "ap2Name": "height",
           "ap1ID": "id-8279",
           "ap2ID": "id-2658"
@@ -1708,6 +1735,11 @@
           "ap2Name": "Shape 1",
           "ap1ID": "id-8282",
           "ap2ID": "id-5775"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5710",
+          "ap2ID": "id-5769"
         }
       ],
       "fileTypeVersion": 1
@@ -3860,42 +3892,6 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.4307692307692308,
-      "uniqueID": "id-8267",
-      "name": "Leg_length"
-    },
-    {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.5230769230769231,
-      "uniqueID": "id-8270",
-      "name": "Top_width"
-    },
-    {
-      "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.6153846153846154,
-      "uniqueID": "id-8273",
-      "name": "Top_Thickness"
-    },
-    {
-      "atomType": "Readme",
-      "x": 0.18267929634641408,
-      "y": 0.23475609756097562,
-      "uniqueID": "id-8289",
-      "name": "README",
-      "ioValues": [
-        {
-          "name": "value",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "readMeText": "Print 4 dowel caps, 1 4 way dowel joint, cut 1 table top, get 4 dowels of your desired diameter and length",
-      "global": true
     }
   ],
   "allConnectors": [
@@ -3990,16 +3986,6 @@
       "ap2ID": "id-5338"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2651",
-      "ap2ID": "id-2674"
-    },
-    {
-      "ap2Name": "Shape 8",
-      "ap1ID": "id-6289",
-      "ap2ID": "id-2680"
-    },
-    {
       "ap2Name": "Leg_length",
       "ap1ID": "id-8267",
       "ap2ID": "id-2651"
@@ -4008,6 +3994,16 @@
       "ap2Name": "diameter",
       "ap1ID": "id-8270",
       "ap2ID": "id-2685"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2651",
+      "ap2ID": "id-2674"
+    },
+    {
+      "ap2Name": "Shape 8",
+      "ap1ID": "id-6289",
+      "ap2ID": "id-2680"
     }
   ],
   "unitsKey": "Inches",
