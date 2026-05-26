@@ -102,8 +102,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6609029779058598,
-      "y": 0.6067073170731707,
+      "x": 0.6349663784822286,
+      "y": 0.47865853658536583,
       "uniqueID": "id-2680",
       "ioValues": [
         {
@@ -3900,6 +3900,22 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.5081652257444765,
+      "y": 0.6097560975609756,
+      "uniqueID": "id-8784",
+      "name": "let",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "let"
+      ]
     }
   ],
   "allConnectors": [
@@ -3924,9 +3940,9 @@
       "ap2ID": "id-7237"
     },
     {
-      "ap2Name": "Shape 7",
+      "ap2Name": "geometry",
       "ap1ID": "id-2674",
-      "ap2ID": "id-2680"
+      "ap2ID": "id-8784"
     },
     {
       "ap2Name": "geometry",
@@ -4011,6 +4027,11 @@
     {
       "ap2Name": "Shape 8",
       "ap1ID": "id-6289",
+      "ap2ID": "id-2680"
+    },
+    {
+      "ap2Name": "Shape 7",
+      "ap1ID": "id-8784",
       "ap2ID": "id-2680"
     }
   ],
